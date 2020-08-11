@@ -10,7 +10,7 @@ const { argv } = require('yargs')
 
 let { PARALLEL_LIMIT, EXCEED_LIMIT } = require('../config')
 PARALLEL_LIMIT = argv.l || argv.limit || PARALLEL_LIMIT
-EXCEED_LIMIT = EXCEED_LIMIT || 7
+EXCEED_LIMIT = EXCEED_LIMIT || 50
 
 const { AUTH, RETRY_LIMIT, TIMEOUT_BASE, TIMEOUT_MAX, LOG_DELAY, PAGE_SIZE, DEFAULT_TARGET } = require('../config')
 const { db } = require('../db')
